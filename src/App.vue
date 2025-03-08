@@ -5,8 +5,8 @@ import { DatePicker } from "./components/date-picker";
 import "vant/es/date-picker/style";
 
 const minDateOrigin = new Date(2025, 2, 10);
-const maxDateOrigin = new Date(2025, 3, 30);
-const dateOrigin = ref(["2025", "04", "01"]);
+const maxDateOrigin = new Date(2025, 11, 30);
+const dateOrigin = ref(["2025", "08", "01"]);
 const handleConfirmOrigin = ({
   selectedIndexes,
   selectedOptions,
@@ -16,8 +16,8 @@ const handleConfirmOrigin = ({
 };
 
 const minDate = new Date(2025, 2, 10);
-const maxDate = new Date(2025, 3, 30);
-const date = ref(["2025", "04", "01"]);
+const maxDate = new Date(2025, 11, 30);
+const date = ref(["2025", "08", "01"]);
 const handleConfirm = ({
   selectedIndexes,
   selectedOptions,

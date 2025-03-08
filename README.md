@@ -1,5 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# vant date-picker 问题
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 背景
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+当 date-picker 存在 min-date 的配置时，且在滚动时还未等待滚动停止就点击了 confirm 按钮，输出的 selectedValues 报错
+
+[components/date-picker](./src/components/date-picker/DatePicker.tsx) 和 [components/picker](./src/components/picker/Picker.tsx) 复制了 vant 的源码，
+[components/picker](./src/components/picker/Picker.tsx) 做了[一行修改](./src/components/picker/Picker.tsx#L190)
+
+## 测试视频
+
+[测试视频](./public/录屏2025-03-08%2020.47.15.mov)
+
+## 运行调试
+
+```bash
+pnpm install
+pnpm run dev
+```
