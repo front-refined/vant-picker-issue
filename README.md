@@ -9,10 +9,12 @@
 
 ## 测试视频
 
+```HTML
 <video>
-  <source src="./public/2.mp4" type="video/mp4">
+  <source src="./public/1.mov" type="video/mp4">
   您的浏览器不支持 HTML5 视频标签。
 </video>
+```
 
 ## 运行调试
 
