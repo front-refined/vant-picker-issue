@@ -9,7 +9,10 @@
 
 ## 测试视频
 
-[测试视频](./public/1.mp4)
+<video width="640" height="480" controls>
+  <source src="./public/1.mov" type="video/mp4">
+  您的浏览器不支持 HTML5 视频标签。
+</video>
 
 ## 运行调试
 
